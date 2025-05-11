@@ -24,8 +24,8 @@ You can compile the resume however you like, but I personally used [Overleaf](ht
 
 The template is filled with placeholder data so you can easily customize it to your own experience and style.
 
-📄 [Example Resume](./example.pdf)
-📄 [Template File (resume.tex)](./resume.tex)
+* 📄 [Example Resume](./example.pdf)
+* 📄 [Template File (resume.tex)](./resume.tex)
 
 If this helped you, feel free to ⭐ star the repo!
 
