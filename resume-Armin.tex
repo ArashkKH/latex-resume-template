@@ -1,0 +1,109 @@
+% !TeX root = resume.tex
+% ============================================
+% Resume Template
+% Created by Aryan Khurana
+% github.com/AryanK1511
+% ============================================
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{ifthen}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage[colorlinks=true, urlcolor=primaryColor]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[margin=0.5in, includefoot]{geometry}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2\ }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeItemNH}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt,label={}]}
+\newcommand{\resumeSubHeadingListStartBullets}{\begin{itemize}[leftmargin=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+{\LARGE \textbf{Armin Kheirollahi}}\\[0.5em]
+\small
+\hrefWithoutArrow{mailto:arminkhe@gmail.com}{arminkhe@gmail.com} •
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Highschool Diploma}{Toronto, Canada}
+      {Thornhill High School}{December 2024 -- June 2025}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Highschool Diploma}{Tehran, Iran}
+      {Danesh Rayaneh Highschool}{September 2020 -- November 2024}
+  \resumeSubHeadingListEnd
+
+\section{Relevant Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Breakfast Club Volunteer}{Toronto, ON}
+      {Thornhill High School}{February 2025 -- June 2025}
+      \resumeItemListStart
+        \resumeItemNH{Set up tables and served food to students in the morning.}
+        \resumeItemNH{Helped organize materials and maintained cleanliness.}
+        \resumeItemNH{Maintained a consistent schedule and arrived on time for early morning shifts. }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+  \begin{itemize}[leftmargin=*, itemsep=-2pt]
+    \item \textbf{Programming \& Scripting:} Friendly and polite with customers 
+    \item \textbf{SRE \& Monitoring:} Fast learner and adaptable under guidance 
+    \item \textbf{Automation, IaC \& Cloud:} Good computer literacy and typing speed 
+    \item \textbf{Backend \& APIs:} Fluent in Persian and English 
+    \item \textbf{Databases \& Storage:} Creative thinker, able to plan and organize tasks early 
+
+  \end{itemize}  
+
+\end{document}
