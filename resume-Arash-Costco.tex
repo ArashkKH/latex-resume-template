@@ -1,0 +1,138 @@
+% !TeX root = resume.tex
+% ============================================
+% Resume Template
+% Created by Aryan Khurana
+% github.com/AryanK1511
+% ============================================
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{ifthen}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage[colorlinks=true, urlcolor=primaryColor]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[margin=0.5in, includefoot]{geometry}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2\ }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeItemNH}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt,label={}]}
+\newcommand{\resumeSubHeadingListStartBullets}{\begin{itemize}[leftmargin=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+{\LARGE \textbf{Arash Kheirollahi}}\\[0.5em]
+\small
+416-627-9876 •
+\hrefWithoutArrow{mailto:arashkhe@gmail.com}{arashkhe@gmail.com} •
+\hrefWithoutArrow{https://www.linkedin.com/in/arash-kheirollahi/}{linkedin.com/in/arash-kheirollahi} •
+\hrefWithoutArrow{https://github.com/arashkkh}{github.com/arashkkh} •
+\hrefWithoutArrow{https://www.arashkh.com}{arashkh.com}\\[0.6em]
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Computer Engineering}{Tehran, Iran}
+      {Tehran Azad Univ., GPA: 3.2/4.0}{September 2020 -- November 2024}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Diploma of Computer Programming}{Toronto, Canada}
+      {Seneca Polytechnic., GPA: 3.7/4.0}{January 2025 -- Present}
+  \resumeSubHeadingListEnd
+
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Front-End Developer}{Tehran, Iran}
+      {Ez-web}{November 2023 -- November 2024}
+      \resumeItemListStart
+        \resumeItemNH{Collaborated with cross-functional teams to deliver responsive websites on tight deadlines.}
+        \resumeItemNH{Engaged in client-facing meetings to present final products and offer usage guidance.}
+        \resumeItemNH{Handled support and quality control to ensure stable, reliable website performance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Front-End Developer}{Tehran, Iran}
+      {Beman Agency}{November 2022 -- November 2023}
+      \resumeItemListStart
+        \resumeItemNH{Assisted in the development and maintenance of promotional and e-commerce websites.}
+        \resumeItemNH{Worked closely with a small team to manage multiple client tasks simultaneously.}
+        \resumeItemNH{Built strong communication and teamwork skills in a fast-paced, deadline-driven environment.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://arashkh.com}{Personal Portfolio Website}} {\\
+      \textbf{Tech:} NextJS, HTML, CSS, JavaScript, React, Tailwind \\
+      Built and maintain a personal website to showcase work, learnings, and career progress.}
+    \resumeSubItem{Client Websites (Freelance/Agency)} {\\
+      \textbf{Tech:} jQuery, HTML/CSS, Bootstrap, CMS \\
+      Contributed to frontend development of business and promotional websites for real-world clients. \\
+      \href{https://beman.co}{beman.co}, \href{https://novinchoob.com/en-us/}{novinchoob.com}, \href{http://pasargadep.com/en/}{pasargadep.com}, \href{https://dejpa.com/}{dejpa.com}, \href{https://www.abasabadecopark.com/}{abasabadecopark.com}}
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=*, itemsep=-2pt]
+    \item \textbf{Tools:} Web design, content management, customer support tools
+    \item \textbf{Digital Skills:} Microsoft Office, basic POS systems, fast typing, email communication
+  \end{itemize}
+
+\section{Other Initiatives and Achievements}
+  \resumeSubHeadingListStartBullets
+    \resumeSubItem{Customer & Team Experience: }
+      {Experienced in working with clients, explaining product features, and collaborating in team environments.}
+    \resumeSubItem{Volunteering and Peer Support: }
+      {Supportive peer at college, often help classmates with tech and school-related tasks.}
+  \resumeSubHeadingListEnd    
+
+\end{document}
